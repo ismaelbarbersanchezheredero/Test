@@ -24,19 +24,18 @@ users = [
 ]
 
 datos = {
-            "author": os.environ['AUTHOR_NAME'],
-            "email": os.environ['AUTHOR_EMAIL'],
-            "version": 1
+            "alumno": os.environ['NAME'],
+            "asignatura": os.environ['SUBJECT'],
+            "nota": float(os.environ.get('NOTA', 7))
             }
 
 @app.route('/')
 def hello_world():
-    return jsonify(author=os.environ['AUTHOR_NAME'], email=os.environ['AUTHOR_EMAIL'])
+    return jsonify(alumno=os.environ['NAME'], asignatura=os.environ['SUBJECT'],nota=float(os.environ.get('NOTA',6)))
 
-@app.route('/author')
+@app.route('/course')
 def hello_world2():
     return jsonify(datos)
-
 
 @app.route('/users')
 def hello_users():
