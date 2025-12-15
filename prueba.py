@@ -26,7 +26,7 @@ users = [
 datos = {
             "alumno": os.environ['NAME'],
             "asignatura": os.environ['SUBJECT'],
-            "nota": float(os.environ.get('NOTA', 7))
+            "nota": float(os.environ.get('NOTA', 7)),
             "DNI": 4
             }
 
