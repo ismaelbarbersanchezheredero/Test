@@ -27,7 +27,7 @@ datos = {
             "alumno": os.environ['NAME'],
             "asignatura": os.environ['SUBJECT'],
             "nota": float(os.environ.get('NOTA', 7)),
-            "DNI": "012345678H"
+            "DNI": "112345678H"
             }
 
 @app.route('/')
