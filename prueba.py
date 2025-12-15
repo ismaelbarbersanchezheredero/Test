@@ -25,7 +25,7 @@ users = [
 
 datos = {
             "author": os.environ['AUTHOR_NAME'],
-            "email": os.environ['AUTHOR_EMAIL']
+            "email": os.environ['AUTHOR_EMAIL'],
             "version": 1
             }
 
